@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium Tupperware Design System - Pink, Black, White Theme */
+
+@layer base {
+  :root {
+    /* Core Colors - Premium Pink Theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
+
+    /* Premium Pink Primary - #e1027f */
+    --primary: 330 99% 44%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light Pink Secondary */
+    --secondary: 348 60% 96%;
+    --secondary-foreground: 348 83% 47%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Coral/Gold Accent for Offers */
+    --accent: 14 90% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 330 99% 44%;
+
+    --radius: 0.75rem;
+    
+    /* Custom Tokens */
+    --gold: 45 100% 51%;
+    --offer-bg: 348 60% 97%;
+    --success: 142 76% 36%;
+    
+    /* Premium Gradients - using #e1027f */
+    --gradient-primary: linear-gradient(135deg, hsl(330 99% 44%), hsl(330 99% 38%));
+    --gradient-offer: hsl(330 99% 44%);
+    --gradient-hero: linear-gradient(180deg, hsl(330 60% 97%), hsl(0 0% 100%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 15%));
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 25%;
+    --sidebar-primary: 0 0% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 91%;
+    --sidebar-ring: 348 83% 60%;
+  }
+
+  .dark {
+    --background: 0 0% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 330 99% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 14 90% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 330 99% 50%;
+    
+    --gold: 45 100% 51%;
+    --offer-bg: 348 30% 12%;
+    --success: 142 76% 36%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(330 99% 50%), hsl(330 99% 42%));
+    --gradient-offer: hsl(330 99% 44%);
+    --gradient-hero: linear-gradient(180deg, hsl(330 30% 12%), hsl(0 0% 6%));
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 348 83% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 330 99% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .premium-shadow {
+    box-shadow: 0 4px 20px -4px hsl(330 99% 44% / 0.15);
+  }
+  
+  .premium-card {
+    @apply bg-card rounded-lg border border-border/50 transition-all duration-300;
+    box-shadow: 0 2px 12px -2px hsl(0 0% 0% / 0.08);
+  }
+  
+  .premium-card:hover {
+    box-shadow: 0 8px 30px -8px hsl(330 99% 44% / 0.2);
+    transform: translateY(-2px);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.9; transform: scale(1.02); }
+  }
+}
