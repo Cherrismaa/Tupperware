@@ -22,7 +22,7 @@ const heroSlides = [
     title: "Premium Quality Storage",
     subtitle: "Authentic Tupperware Products",
     highlight: "15+ Years of Trust",
-    image: "/placeholder.svg",
+    image: "public/assets/tup-hero3.webp",
   },
 ];
 
