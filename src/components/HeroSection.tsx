@@ -122,7 +122,7 @@ export const HeroSection = () => {
             />
             <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
               {slide.highlight && (
-                <span className="inline-block px-4 py-1.5 text-xs md:text-sm font-bold bg-[#e92063] text-white rounded-full mb-4 animate-pulse">
+                <span className="inline-block px-4 py-1.5 text-xs md:text-sm font-bold bg-[#e92063] text-black rounded-full mb-4 animate-pulse">
                   {slide.highlight}
                 </span>
               )}
