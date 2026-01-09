@@ -79,24 +79,35 @@ export const Footer = () => {
           <div>
             <h3 className="text-sm font-semibold mb-4 text-[#e92063]">Categories</h3>
             <div className="space-y-2">
+
               <Link to="/products?category=food-storage" className="block text-sm text-white/70 hover:text-[#e92063] transition-colors">
                 Food Storage
               </Link>
+
               <Link to="/products?category=kitchenware" className="block text-sm text-white/70 hover:text-[#e92063] transition-colors">
                 Kitchenware
               </Link>
+
               <Link to="/products?category=serverware" className="block text-sm text-white/70 hover:text-[#e92063] transition-colors">
-                Serverware
+                ServerWare
               </Link>
+
               <Link to="/products?category=lunch-boxes" className="block text-sm text-white/70 hover:text-[#e92063] transition-colors">
                 Kidsware / Lunch Boxes
               </Link>
+
               <Link to="/products?category=water-bottles" className="block text-sm text-white/70 hover:text-[#e92063] transition-colors">
                 Water Bottles
               </Link>
+
+              <Link to="/products?category=water-bottles" className="block text-sm text-white/70 hover:text-[#e92063] transition-colors">
+                CookWare
+              </Link>
+
               <Link to="/products?category=organizers" className="block text-sm text-white/70 hover:text-[#e92063] transition-colors">
                 Organizers
               </Link>
+              
             </div>
           </div>
 
