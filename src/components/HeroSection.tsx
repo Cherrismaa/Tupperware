@@ -8,21 +8,21 @@ const heroSlides = [
     title: "Buy ₹5500 worth of products",
     subtitle: "Get ₹1000 worth of products FREE!",
     highlight: "Limited Time Offer",
-    image: "public/assets/tup-2026.webp",
+    image: "src/assets/tup-2026.webp",
   },
   {
     id: 2,
     title: "FREE Shipping",
     subtitle: "On orders of ₹3500 and above",
     highlight: "All India Delivery",
-    image: "public/assets/bottles-boxes.webp",
+    image: "src/assets/bottles-boxes.webp",
   },
   {
     id: 3,
     title: "Premium Quality Storage",
     subtitle: "Authentic Tupperware Products",
     highlight: "15+ Years of Trust",
-    image: "public/assets/tup-hero3.webp",
+    image: "src/assets/tup-hero3.webp",
   },
 ];
 

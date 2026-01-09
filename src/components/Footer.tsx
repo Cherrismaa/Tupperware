@@ -21,7 +21,7 @@ export const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center flex-shrink-0">
               <img
-                src="public/logos/footer-logo.png"
+                src="src/logos/footer-logo.png"
                 alt="Tupperware Hyderabad"
                 className=" h-16 sm:h-20 md:h-24 w-auto object-contain mb-4"/>
             </Link>

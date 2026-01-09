@@ -7,7 +7,7 @@ export const categories: Category[] = [
     name: "Prep and Cook",
     slug: "prepping",
     description: "Keep your food fresh with our premium storage solutions",
-    image: "public/assets/products-home/prep.jpg",
+    image: "src/assets/products-home/prep.jpg",
   },
 
   {
@@ -15,7 +15,7 @@ export const categories: Category[] = [
     name: "Serverware",
     slug: "serverware",
     description: "Elegant serving solutions for every occasion",
-    image: "public/assets/products-home/serverware.jpg",
+    image: "src/assets/products-home/serverware.jpg",
   },
 
   {
@@ -23,7 +23,7 @@ export const categories: Category[] = [
     name: "Refrigerator",
     slug: "refrigerator",
     description: "Keep your food fresh with our premium storage solutions",
-    image: "public/assets/products-home/refrigerator.webp",
+    image: "src/assets/products-home/refrigerator.webp",
   },
 
   {
@@ -31,7 +31,7 @@ export const categories: Category[] = [
     name: "Voila Glassware",
     slug: "glassware",
     description: "Essential kitchen tools for every home",
-    image: "public/assets/products-home/glassware.webp",
+    image: "src/assets/products-home/glassware.webp",
   },
 
   {
@@ -39,7 +39,7 @@ export const categories: Category[] = [
     name: "On The Go",
     slug: "travels",
     description: "Keep your space neat and organized",
-    image: "public/assets/products-home/lunchboxes.jpg",
+    image: "src/assets/products-home/lunchboxes.jpg",
   },
 
   {
@@ -47,7 +47,7 @@ export const categories: Category[] = [
     name: "Aqua Safe",
     slug: "water-bottles",
     description: "Stay hydrated with our eco-friendly bottles",
-    image: "public/assets/products-home/waterbottle.jpg",
+    image: "src/assets/products-home/waterbottle.jpg",
   },
 
     {
@@ -55,7 +55,7 @@ export const categories: Category[] = [
     name: "Dry Storage",
     slug: "dry-storage",
     description: "Keep your food fresh with our premium storage solutions",
-    image: "public/assets/products-home/dry-storage.webp",
+    image: "src/assets/products-home/dry-storage.webp",
   },
 
   {
@@ -63,7 +63,7 @@ export const categories: Category[] = [
     name: "Cookware",
     slug: "cookware",
     description: "Essential kitchen tools for every home",
-    image: "public/assets/products-home/cookware.avif",
+    image: "src/assets/products-home/cookware.avif",
   },
 
 ];
@@ -78,7 +78,7 @@ export const offerProducts: Product[] = [
   category: "refrigerator",
   price: 1404,
   originalPrice: 1560,
-  image: "public/assets/products-home/cookware.avif",
+  image: "src/assets/products-home/cookware.avif",
   description: "Compact freshness container designed to keep chopped fruits and vegetables crisp and flavorful for longer.",
   size: "",
   quantity: "1 pc",
