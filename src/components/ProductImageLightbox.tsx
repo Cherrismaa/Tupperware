@@ -1,3 +1,5 @@
+//src\components\ProductImageLightbox.tsx
+
 import { useState, useEffect, useCallback } from "react";
 import { Dialog, DialogContent } from "./ui/dialog";
 import { Button } from "./ui/button";

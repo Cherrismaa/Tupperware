@@ -1,3 +1,5 @@
+//src\components\ProductCard.tsx
+
 import { useState } from "react";
 import { Product } from "@/types/product";
 import { Card, CardContent, CardFooter } from "./ui/card";

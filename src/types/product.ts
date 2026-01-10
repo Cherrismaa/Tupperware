@@ -1,3 +1,5 @@
+// src\types\product.ts
+
 export interface Product {
   id: string;
   name: string;
@@ -9,6 +11,7 @@ export interface Product {
   description: string;
   size?: string;
   quantity?: string;
+  colors?: string[];
   inStock: boolean;
   isOffer?: boolean;
   discount?: number;
