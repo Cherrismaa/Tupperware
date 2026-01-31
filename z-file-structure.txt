@@ -1,0 +1,86 @@
+Tupperware-main/
+│
+├── 📁 public/
+│   ├── 📁 assets/
+│   ├── 📁 logos/
+│   ├── favicon
+│   ├── placeholder.svg
+│   └── robots.txt
+│
+├── 📁 src/            
+│   │
+│   ├── 📁 components/
+│   │   │
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   ├── PromoBanner.tsx
+│   │   │
+│   │   ├── HeroSection.tsx
+│   │   ├── CollectionsSection.tsx
+│   │   ├── OfferProductsSection.tsx
+│   │   ├── KitchenGallery.tsx
+│   │   │
+│   │   ├── ProductCard.tsx
+│   │   ├── ProductImageLightbox.tsx
+│   │   ├── SearchBar.tsx
+│   │   │
+│   │   ├── WhatsAppButton.tsx
+│   │   │
+│   │   └── 📁 ui/               
+│   │
+│   ├── 📁 pages/
+│   │   │
+│   │   ├── Home.tsx
+│   │   ├── Products.tsx
+│   │   ├── Cart.tsx
+│   │   ├── Gallery.tsx
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── VisitStore.tsx
+│   │   └── NotFound.tsx
+│   │
+│   ├── 📁 data/
+│   │   │
+│   │   └── products.ts
+│   │
+│   ├── 📁 hooks/
+│   │   │
+│   │   ├── use-mobile.tsx
+│   │   └── use-toast.ts
+│   │
+│   ├── 📁 lib/
+│   │   │
+│   │   ├── cart.ts
+│   │   └── utils.ts
+│   │
+│   ├── 📁 types/
+│   │   │
+│   │   └── product.ts
+│   │
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── App.css
+│   ├── index.css
+│   └── vite-env.d.ts
+│
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── bun.lockb
+├── postcss.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+├── .gitignore
+└── README.md
+
+
+
+
+Tupperware-main
+
+node_modules public public/assets public/favicon public/logos public/placeholder.svg public/robots.txt src src/components src/components/ui src/components/CollectionsSection.tsx src/components/Footer.tsx src/components/Header.tsx src/components/HeroSection.tsx src/components/KitchenGallery.tsx src/components/OfferProductsSection.tsx src/components/ProductCard.tsx src/components/ProductImageLightbox.tsx src/components/PromoBanner.tsx src/components/SearchBar.tsx src/components/WhatsAppButton.tsx src/data src/data/products copy.ts src/data/products-56.ts src/data/products-main.ts src/data/products.ts src/hooks src/hooks/use-mobile.tsx src/hooks/use-toast.ts src/lib src/lib/cart.ts src/lib/utils.ts src/pages src/pages/About.tsx src/pages/Cart.tsx src/pages/Contact.tsx src/pages/Gallery.tsx src/pages/Home.tsx src/pages/NotFound.tsx src/pages/Products.tsx src/pages/VisitStore.tsx src/types src/types/product.ts src/App.css src/App.tsx src/index.css src/main.tsx src/vite-env.d.ts .gitignore bun.lockb components.json eslint.config.js index.html package-lock.json package.json postcss.config.js README.md tailwind.config.ts tsconfig.app.json tsconfig.json tsconfig.node.json vite.config.ts

@@ -100,7 +100,7 @@ export const ProductCard = ({ product, compact = false }: ProductCardProps) => {
 
   return (
     <>
-      <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+      <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-full min-h-[420px] md:min-h-[460px]">
         <div className="relative">
           {product.isOffer && product.discount && (
             <Badge className="absolute top-1.5 right-1.5 bg-primary text-primary-foreground z-10 text-xs px-2 py-0.5">
@@ -128,8 +128,14 @@ export const ProductCard = ({ product, compact = false }: ProductCardProps) => {
           {product.size && (
             <p className="text-xs text-foreground/70 mb-0.5">Size: {product.size}</p>
           )}
+          {product.colors && product.colors.length > 0 && (
+            <p className="text-xs text-foreground/70 mb-0.5">
+              Available Colors: {product.colors.join(", ")}
+            </p>
+          )}
+
           {product.quantity && (
-            <p className="text-xs text-foreground/70 mb-1">Qty: {product.quantity}</p>
+            <p className="text-xs text-foreground/70 mb-1">Quantity: {product.quantity}</p>
           )}
           <p className="text-xs text-foreground/60 mb-2 line-clamp-2 hidden md:block">{product.description}</p>
 

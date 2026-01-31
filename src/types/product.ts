@@ -7,7 +7,7 @@ export interface Product {
   price: number;
   originalPrice?: number;
   image: string;
-  images?: string[]; // Optional additional images (front, back, side views)
+  images?: string[]; 
   description: string;
   size?: string;
   quantity?: string;
