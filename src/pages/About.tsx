@@ -1,3 +1,5 @@
+//src\pages\About.tsx
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -42,7 +44,7 @@ const About = () => {
     "Premium quality Tupperware products",
     "15+ years of trusted service in Hyderabad",
     "Expert kitchen organization advice",
-    "Genuine products with warranty",
+    "Reliable products backed by warranty support",
     "Affordable pricing with great discounts",
     "Free delivery on orders above ₹3500",
   ];
@@ -53,7 +55,7 @@ const About = () => {
         <title>About Us | Tupperware Hyderabad - 15+ Years of Trusted Service</title>
         <meta
           name="description"
-          content="Learn about Tupperware Hyderabad - serving authentic Tupperware products and kitchen organization solutions for over 15 years. See real customer transformations."
+          content="Learn about our 15+ years of experience in kitchen organization and premium Tupperware solutions. Discover how we help families create well-organized kitchens."
         />
       </Helmet>
 
@@ -72,7 +74,7 @@ const About = () => {
                   Transforming Kitchens Across Hyderabad
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  For over 15 years, we've been helping families organize their kitchens with authentic Tupperware products. 
+                  For over 15 years, we've been helping families organize their kitchens with thoughtfully chosen Tupperware solutions. 
                   Our mission is to make every kitchen neat, organized, and a joy to work in.
                 </p>
               </div>
@@ -240,9 +242,9 @@ const About = () => {
                   <Phone className="h-4 w-4" />
                   +91 89193 57003
                 </a>
-                <a href="mailto:yourmail@example.com" className="flex items-center gap-2 text-white/90 hover:text-white">
+                <a href="mailto:contacttupperwarehyd@gmail.com" className="flex items-center gap-2 text-white/90 hover:text-white">
                   <Mail className="h-4 w-4" />
-                  yourmail@example.com
+                  contacttupperwarehyd@gmail.com
                 </a>
               </div>
 

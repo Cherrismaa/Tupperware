@@ -1,3 +1,5 @@
+//src\components\OfferProductsSection.tsx
+
 import { useRef } from "react";
 import { offerProducts } from "@/data/products";
 import { ProductCard } from "./ProductCard";
@@ -21,8 +23,9 @@ export const OfferProductsSection = () => {
           <div className="inline-block bg-primary text-primary-foreground px-4 py-1 rounded-full font-semibold text-xs mb-3">
             LIMITED TIME OFFERS
           </div>
-          <h2 className="text-xl md:text-2xl font-bold text-foreground mb-1">Special Offer Products</h2>
-          <p className="text-muted-foreground text-xs md:text-sm">Up to 50% off on selected items</p>
+          <h2 className="text-xl md:text-2xl font-bold text-foreground mb-1">Save 10% to 50% on selected products</h2>
+          <p className="text-muted-foreground text-xs md:text-sm mt-1"> Special deals available across popular kitchen and storage collections.</p>
+
         </div>
 
         {/* Scrollable Products Container */}

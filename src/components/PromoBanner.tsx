@@ -1,3 +1,5 @@
+//src\components\PromoBanner.tsx
+
 import { X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
@@ -27,8 +29,8 @@ export const PromoBanner = () => {
           <X className="h-4 w-4" />
         </Button>
         <div className="pr-6">
-          <h3 className="text-base md:text-lg font-bold mb-1.5">🎉 Limited Time Offer!</h3>
-          <p className="text-xs md:text-sm mb-2.5 opacity-95">Buy ₹2500 worth of products and get ₹1000 OFF instantly!</p>
+          <h3 className="text-base md:text-lg font-bold mb-1.5">Limited-Time Offer</h3>
+          <p className="text-xs md:text-sm mb-2.5 opacity-95">Shop for ₹2500 and enjoy ₹1000 instant savings.</p>
           <a href="/products">
             <Button variant="outline" size="sm" className="bg-white text-primary hover:bg-white/90 text-xs md:text-sm h-8">
               Shop Now

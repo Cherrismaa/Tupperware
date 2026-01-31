@@ -1,3 +1,5 @@
+//src\pages\Home.tsx
+
 import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -13,35 +15,22 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Home = () => {
-  useEffect(() => {
-    // Auto-scroll to offer products section after a brief delay
-    const timer = setTimeout(() => {
-      const offerSection = document.getElementById("offer-products");
-      if (offerSection) {
-        offerSection.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <>
       <Helmet>
-        <title>Tupperware Store Hyderabad | Authentic Tupperware Products & Amazing Offers</title>
+        <title>Tupperware Store Hyderabad | Premium Kitchen Products & Amazing Offers</title>
         <meta
           name="description"
-          content="Best Tupperware Store in Hyderabad offering authentic food storage, kitchenware, serverware with 50% off. Premium quality products at amazing prices. Visit our store today!"
-        />
-        <meta
-          name="keywords"
-          content="Tupperware Hyderabad, Tupperware Store, Food Storage Hyderabad, Kitchenware, Serverware, Authentic Tupperware, Tupperware Offers, Best Tupperware Deals"
-        />
-        <meta property="og:title" content="Tupperware Store Hyderabad - Authentic Products & 50% Off" />
+          content= "Explore premium Tupperware products including food storage, kitchenware, bottles, and lunch boxes. Fast delivery across Telangana and Pan India." />
+
+        <meta 
+          property="og:title" 
+          content="Tupperware Store Hyderabad - Authentic Products at 50% Off" />
         <meta
           property="og:description"
-          content="Premium Tupperware products in Hyderabad. Food storage, kitchenware, lunch boxes with amazing discounts."
-        />
+          content="Premium Tupperware products in Hyderabad, exclusive offers, and kitchen organization support with fast delivery across Telangana and India."/>
+
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://tupperwarestore.co.in/" />
       </Helmet>

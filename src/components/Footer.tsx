@@ -1,3 +1,5 @@
+//src\components\Footer.tsx
+
 import { MapPin, Phone, Instagram, Mail, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
@@ -22,11 +24,11 @@ export const Footer = () => {
             <Link to="/" className="flex items-center flex-shrink-0">
               <img
                 src="/logos//footer-logo.png"
-                alt="Tupperware Hyderabad"
+                alt="Original Tupperware Products and Kitchen Organization in Hyderabad"
                 className=" h-16 sm:h-20 md:h-24 w-auto object-contain mb-4"/>
             </Link>
             <p className="text-sm text-white/70 leading-relaxed mb-4">
-              Serving authentic Tupperware products in Hyderabad for over 15 years — premium kitchenware, storage, and organizational solutions you can trust.
+              Serving authentic Tupperware products in Hyderabad for over 15 years. We provide free kitchen organization service with home visit and offer fast delivery across Telangana and Pan India.
             </p>
             
             {/* Social Links */}
@@ -117,6 +119,7 @@ export const Footer = () => {
             <div className="space-y-3">
               <a
                 href="tel:+918919357003"
+                aria-label="Call for Tupperware products and kitchen organization service"
                 className="flex items-center gap-2 text-sm text-white/70 hover:text-[#e92063] transition-colors"
               >
                 <Phone className="h-4 w-4 flex-shrink-0" />
@@ -124,6 +127,7 @@ export const Footer = () => {
               </a>
               <a
                 href={`https://wa.me/918919357003`}
+                aria-label="WhatsApp for Tupperware orders and free kitchen organization service"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-white/70 hover:text-[#25D366] transition-colors"
@@ -163,6 +167,9 @@ export const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/50">
             <p>© {new Date().getFullYear()} Tupperware Hyderabad. All rights reserved.</p>
             <p>15+ Years of Authentic Tupperware Service</p>
+            <p className="text-[12px] text-white/40 text-center mt-1"> 
+            Independent Tupperware consultant. This website is not an official Tupperware India website.</p>
+
           </div>
         </div>
       </div>

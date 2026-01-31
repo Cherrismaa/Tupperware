@@ -1,3 +1,5 @@
+//src\pages\Cart.tsx
+
 import { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -144,17 +146,21 @@ const Cart = () => {
 
                       {total >= 2500 && (
                         <div className="bg-success/10 border border-success text-success p-3 rounded-lg mb-4 text-sm text-center">
-                          🎉 You saved ₹1000!
+                          ₹1000 offer applied to your order
                         </div>
                       )}
 
                       {total < 2500 && total > 0 && (
                         <div className="bg-accent/10 border border-accent text-accent-foreground p-3 rounded-lg mb-4 text-sm text-center">
-                          Add ₹{2500 - total} more to get ₹1000 off!
+                          Add ₹{2500 - total} more to unlock the ₹1000 offer
                         </div>
                       )}
 
-                      <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://wa.me/918919357003?text=Hi%20I%20want%20to%20place%20my%20order%20from%20the%20website"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
                         <Button variant="offer" size="lg" className="w-full mb-3">
                           Checkout via WhatsApp
                         </Button>

@@ -1,3 +1,5 @@
+//src\pages\VisitStore.tsx
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,15 +11,11 @@ const VisitStore = () => {
   return (
     <>
       <Helmet>
-        <title>Visit Our Store | Tupperware Store Hyderabad - Location & Offers</title>
+        <title>Visit Our Store | Tupperware Store Hyderabad</title>
         <meta
           name="description"
-          content="Visit Tupperware Store in Hyderabad for exclusive in-store offers. 15+ years serving authentic Tupperware products with expert guidance."
-        />
-        <meta
-          name="keywords"
-          content="Tupperware Store Hyderabad Location, Visit Tupperware Store, Tupperware Shop Hyderabad"
-        />
+          content="Visit our Tupperware store in Hyderabad to explore storage containers, kitchenware, lunch boxes, and exclusive in-store offers. Get expert guidance and personalized support."/>
+        
         <link rel="canonical" href="https://tupperwarestore.co.in/visit-store" />
       </Helmet>
 
@@ -119,7 +117,7 @@ const VisitStore = () => {
                         <p className="text-xs text-muted-foreground mt-1">Demonstrations</p>
                       </div>
                       <div className="bg-secondary/50 rounded-lg p-3 text-center col-span-2">
-                        <span className="text-sm font-semibold text-foreground">Buy ₹2500, Get ₹1000 OFF</span>
+                        <span className="text-sm font-semibold text-foreground">Spend ₹2500 and receive ₹1000 in value</span>
                         <p className="text-xs text-muted-foreground mt-0.5">+ Special Bundle Deals</p>
                       </div>
                     </div>
@@ -138,7 +136,7 @@ const VisitStore = () => {
                         "See and feel products before buying",
                         "Expert guidance on product selection",
                         "Exclusive in-store only deals",
-                        "100% authentic Tupperware products",
+                        "Official Tupperware product range",
                         "Free product care demonstrations",
                         "Instant product availability"
                       ].map((item, index) => (
@@ -159,8 +157,11 @@ const VisitStore = () => {
                 <Award className="h-8 w-8 mx-auto mb-3 text-primary" />
                 <h2 className="text-xl font-semibold mb-2 text-foreground">15+ Years of Excellence</h2>
                 <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-                  Serving authentic Tupperware products in Hyderabad — premium kitchenware, storage, and organizational solutions you can trust.
+                  Serving households across India with thoughtfully selected kitchenware, storage solutions, and everyday essentials designed for modern living.
                 </p>
+                <p className="text-xs text-muted-foreground mt-2">
+                  Conveniently located in Hyderabad with easy access and in-store assistance.</p>
+
               </CardContent>
             </Card>
           </div>

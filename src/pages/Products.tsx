@@ -1,3 +1,5 @@
+//src\pages\Products.tsx
+
 import { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -9,13 +11,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [filteredProducts, setFilteredProducts] = useState(allProducts);
-
-  useEffect(() => {
-    // Auto-scroll to products after brief delay
-    setTimeout(() => {
-      window.scrollTo({ top: 200, behavior: "smooth" });
-    }, 500);
-  }, []);
 
   useEffect(() => {
     if (selectedCategory === "all") {
@@ -31,12 +26,9 @@ const Products = () => {
         <title>All Products | Tupperware Store Hyderabad - Food Storage & Kitchenware</title>
         <meta
           name="description"
-          content="Browse our complete range of authentic Tupperware products in Hyderabad. Food storage containers, kitchenware, lunch boxes, water bottles with 50% off."
+          content="Browse our full range of Tupperware products including storage containers, kitchenware, lunch boxes, bottles, and organizers from 20% Off. Fast delivery across Telangana and Pan India."
         />
-        <meta
-          name="keywords"
-          content="Tupperware Products Hyderabad, Food Storage Containers, Kitchen Organizers, Lunch Boxes, Water Bottles, Serverware"
-        />
+        
         <link rel="canonical" href="https://tupperwarestore.co.in/products" />
       </Helmet>
 
@@ -46,7 +38,7 @@ const Products = () => {
           <div className="bg-gradient-hero py-12 mb-8">
             <div className="container mx-auto px-4 text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Our Products</h1>
-              <p className="text-xl text-muted-foreground">Authentic Tupperware with Amazing Offers</p>
+              <p className="text-xl text-muted-foreground">Explore storage, kitchenware, bottles, lunch boxes, and organizers</p>
             </div>
           </div>
 
@@ -60,7 +52,7 @@ const Products = () => {
                 <SelectContent>
                   <SelectItem value="all">All Categories</SelectItem>
                   {categories.map((category) => (
-                    <SelectItem key={category.id} value={category.name}>
+                    <SelectItem key={category.id} value={category.slug}>
                       {category.name}
                     </SelectItem>
                   ))}

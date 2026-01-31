@@ -1,3 +1,5 @@
+//src\components\HeroSection.tsx
+
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
@@ -126,7 +128,9 @@ export const HeroSection = () => {
                   {slide.highlight}
                 </span>
               )}
-              <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-foreground mb-3 animate-fade-in">{slide.title}</h1>
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-foreground mb-3 animate-fade-in">
+              {slide.title}</h2>
+
               <p className="text-lg sm:text-xl md:text-2xl text-[#e92063] font-semibold mb-6 animate-slide-up">{slide.subtitle}</p>
               <Button variant="offer" size="lg" className="shadow-lg hover:shadow-xl transition-shadow">
                 Shop Now
@@ -156,6 +160,9 @@ export const HeroSection = () => {
 
       {/* Dots Indicator */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+      <h1 className="sr-only">
+      Original Tupperware Products & Free Kitchen Organization in Hyderabad</h1>
+
         {heroSlides.map((_, index) => (
           <button
             key={index}

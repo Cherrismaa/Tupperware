@@ -1,3 +1,5 @@
+//src\components\SearchBar.tsx
+
 import { useState, useRef, useEffect } from "react";
 import { Search, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -8,10 +10,10 @@ import { Button } from "./ui/button";
 // Search keywords mapped to products for smart suggestions
 const searchKeywords: Record<string, string[]> = {
   // Location-based keywords
-  "kitchen shelf": ["Smart Stor Container Set", "Modular Mates Oval Set", "Premium Storage Organizer"],
-  "fridge": ["FridgeSmart Container Set", "Smart Stor Container Set"],
+  "kitchen shelf": ["Smart Storer Container Set", "Modular Mates Oval Set", "Premium Storage Organizer"],
+  "fridge": ["FridgeSmart Container Set", "Smart Storer Container Set"],
   "cupboard": ["Modular Mates Oval Set", "Premium Storage Organizer"],
-  "pantry": ["Modular Mates Oval Set", "Smart Stor Container Set"],
+  "pantry": ["Modular Mates Oval Set", "Smart Storer Container Set"],
   "dining table": ["Elegant Serve Set", "Classic Bowl Set"],
   "dining": ["Elegant Serve Set", "Classic Bowl Set"],
   
@@ -19,17 +21,17 @@ const searchKeywords: Record<string, string[]> = {
   "snack box": ["Compact Lunch Box", "Venture Lunch Box", "Smart Lunch Set"],
   "chapati box": ["Crystal Wave Bowl", "Classic Bowl Set"],
   "lunch carrier": ["Smart Lunch Set", "Venture Lunch Box"],
-  "masala box": ["Smart Stor Container Set", "Modular Mates Oval Set"],
-  "kitchen items": ["Smart Stor Container Set", "Classic Bowl Set", "Crystal Wave Bowl", "Premium Storage Organizer"],
-  "fridge set": ["FridgeSmart Container Set", "Smart Stor Container Set"],
+  "masala box": ["Smart Storer  Container Set", "Modular Mates Oval Set"],
+  "kitchen items": ["Smart Storer  Container Set", "Classic Bowl Set", "Crystal Wave Bowl", "Premium Storage Organizer"],
+  "fridge set": ["FridgeSmart Container Set", "Smart Storer Container Set"],
   "lunch box": ["Compact Lunch Box", "Venture Lunch Box", "Smart Lunch Set"],
   
   // Size-based keywords
   "water": ["Fresh & Pure Water Bottle", "Eco Water Bottle"],
   "bottle": ["Fresh & Pure Water Bottle", "Eco Water Bottle"],
-  "1l": ["Fresh & Pure Water Bottle", "Smart Stor Container Set"],
-  "1 liter": ["Fresh & Pure Water Bottle", "Smart Stor Container Set"],
-  "small box": ["Compact Lunch Box", "Smart Stor Container Set"],
+  "1l": ["Fresh & Pure Water Bottle", "Smart Storer Container Set"],
+  "1 liter": ["Fresh & Pure Water Bottle", "Smart Storer Container Set"],
+  "small box": ["Compact Lunch Box", "Smart Storer Container Set"],
   "tall box": ["Modular Mates Oval Set"],
   "big box": ["Premium Storage Organizer", "Modular Mates Oval Set"],
   
@@ -37,9 +39,9 @@ const searchKeywords: Record<string, string[]> = {
   "serving": ["Elegant Serve Set"],
   "mixing bowl": ["Classic Bowl Set", "Crystal Wave Bowl"],
   "microwave": ["Crystal Wave Bowl"],
-  "storage": ["Smart Stor Container Set", "FridgeSmart Container Set", "Premium Storage Organizer"],
+  "storage": ["Smart Storer Container Set", "FridgeSmart Container Set", "Premium Storage Organizer"],
   "organizer": ["Premium Storage Organizer", "Modular Mates Oval Set"],
-  "container": ["Smart Stor Container Set", "FridgeSmart Container Set", "Modular Mates Oval Set"],
+  "container": ["Smart Storer Container Set", "FridgeSmart Container Set", "Modular Mates Oval Set"],
   
   // User-based keywords
   "kids": ["Compact Lunch Box", "Venture Lunch Box"],
@@ -138,6 +140,7 @@ export const SearchBar = ({ className = "", onClose, isMobile = false }: SearchB
         <Input
           ref={inputRef}
           type="text"
+          aria-label="Search Tupperware products"
           placeholder="Search by product, size, or use..."
           value={query}
           onChange={(e) => handleSearch(e.target.value)}

@@ -1,3 +1,5 @@
+//src\components\KitchenGallery.tsx
+
 import { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react";
 import { Button } from "./ui/button";
@@ -77,8 +79,8 @@ interface KitchenGalleryProps {
 export const KitchenGallery = ({
   images = sampleGalleryImages,
   showDetails = false,
-  title = "Real Customer Transformations",
-  subtitle = "See how we've helped families organize their kitchens",
+  title = "Customer Kitchen Organization and free Transformations Service in Hyderabad",
+  subtitle = "Expert home visit, personalized planning, and complete kitchen setup using Tupperware solutions",
   compact = false,
   showCustomizeMessage = false,
 }: KitchenGalleryProps) => {
@@ -142,7 +144,7 @@ export const KitchenGallery = ({
     if (scrollContainerRef.current) {
       scrollContainerRef.current.style.cursor = "grab";
     }
-    setStartX(0);
+    setStartX(0)
   };
 
   return (
@@ -157,7 +159,11 @@ export const KitchenGallery = ({
               </h2>
             )}
             {subtitle && <p className="text-muted-foreground text-sm md:text-base">{subtitle}</p>}
+            <p className="text-muted-foreground max-w-3xl mx-auto mt-3 text-sm md:text-base">
+              We provide a free kitchen organization service across Hyderabad and nearby areas. Our team visits your home, understands your storage needs, and helps organize your kitchen using customized Tupperware solutions for better space utilization and everyday convenience.</p>
+
           </div>
+          
         )}
 
         {/* Customize Message Block */}

@@ -186,9 +186,9 @@ const Gallery = () => {
                   <Phone className="h-4 w-4" />
                   +91 89193 57003
                 </a>
-                <a href="mailto:yourmail@example.com" className="flex items-center gap-2 text-white/90 hover:text-white">
+                <a href="mailto:contacttupperwarehyd@gmail.com" className="flex items-center gap-2 text-white/90 hover:text-white">
                   <Mail className="h-4 w-4" />
-                  yourmail@example.com
+                  contacttupperwarehyd@gmail.com
                 </a>
               </div>
 

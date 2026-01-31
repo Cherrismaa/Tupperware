@@ -1,3 +1,5 @@
+//src\components\CollectionsSection.tsx
+
 import { categories } from "@/data/products";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "./ui/card";
@@ -6,8 +8,8 @@ export const CollectionsSection = () => {
   return (
     <section className="container mx-auto px-4 py-12">
       <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Explore Our Collections</h2>
-        <p className="text-muted-foreground">Discover our premium range of authentic Tupperware products</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Explore Our Tupperware Product Collections</h2>
+        <p className="text-muted-foreground">Explore original Tupperware products including storage containers, bottles, lunch boxes, and essential kitchen solutions built for everyday use.</p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">

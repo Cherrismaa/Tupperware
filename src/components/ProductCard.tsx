@@ -51,7 +51,7 @@ export const ProductCard = ({ product, compact = false }: ProductCardProps) => {
             >
               <img
                 src={product.image}
-                alt={product.name}
+                alt={`${product.name} - kitchen storage solution`}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
               {/* Zoom indicator on hover */}

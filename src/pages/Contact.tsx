@@ -1,3 +1,5 @@
+//src\pages\Contact.tsx
+
 import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -17,12 +19,11 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Tupperware Store Hyderabad - Get in Touch</title>
+        <title>Contact Us | Tupperware Hyderabad</title>
         <meta
           name="description"
-          content="Contact Tupperware Store Hyderabad. Call us, WhatsApp, or visit our store for authentic Tupperware products with amazing offers."
+          content="Contact us for premium Tupperware products, kitchen organization support, and store assistance in Hyderabad. Call, WhatsApp, or visit us today."
         />
-        <meta name="keywords" content="Tupperware Contact Hyderabad, Tupperware Store Location, Contact Tupperware" />
         <link rel="canonical" href="https://tupperwarestore.co.in/contact" />
       </Helmet>
 
@@ -32,7 +33,8 @@ const Contact = () => {
           <div className="bg-gradient-hero py-12 mb-8">
             <div className="container mx-auto px-4 text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Contact Us</h1>
-              <p className="text-xl text-muted-foreground">We're here to help you find the perfect products</p>
+              <p className="text-xl text-muted-foreground">
+                We’re here to help with products, kitchen organization, and store visits</p>
             </div>
           </div>
 
@@ -86,6 +88,14 @@ const Contact = () => {
                         </p>
                       </div>
                     </div>
+
+                    <div className="flex items-start gap-4 text-sm text-muted-foreground">
+                      <p>
+                        We deliver products across Telangana and Pan India. 
+                        Orders within Telangana are usually delivered within 1–2 days, 
+                        while Pan India delivery takes 2–4 working days.
+                      </p>
+                    </div>
                   </div>
 
                   <div className="mt-8">
@@ -103,6 +113,7 @@ const Contact = () => {
                   <h2 className="text-2xl font-bold mb-6">Visit Our Store</h2>
                   <div className="aspect-video bg-muted rounded-lg overflow-hidden mb-4">
                     <iframe
+                      title="Tupperware Store Location Hyderabad"
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6230942622043!2d78.48671631487767!3d17.42528288805315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1234567890"
                       width="100%"
                       height="100%"

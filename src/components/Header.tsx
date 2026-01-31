@@ -1,3 +1,5 @@
+//src\components\Header.tsx
+
 import { ShoppingCart, Phone, Menu, X, Search, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
@@ -53,7 +55,7 @@ export const Header = () => {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         {/* Top announcement bar */}
         <div className="bg-gradient-primary text-primary-foreground py-2 px-4 text-center text-xs sm:text-sm font-medium">
-          <p>🎉 Limited Time Offer: Buy ₹2500 & Get ₹1000 Off! | Free Shipping on ₹3500+ 🎉</p>
+          <p>Limited Time Offers on all the Products | Fast Delivery Across Pan India</p>
         </div>
 
         {/* Main header */}
@@ -64,7 +66,7 @@ export const Header = () => {
             <Link to="/" className="flex items-center flex-shrink-0">
               <img
                 src="/logos//header-logo.png"
-                alt="Tupperware Hyderabad"
+                alt="Original Tupperware Products Hyderabad"
                 className="h-8 sm:h-20 w-auto object-contain"/>
             </Link>
 
@@ -113,7 +115,9 @@ export const Header = () => {
             </a>
 
             {/* Call Button */}
-            <a href="tel:+918919357003" className="hidden sm:flex items-center">
+            <a href="tel:+918919357003" 
+            aria-label="Call for Tupperware products and kitchen organization service"
+            className="hidden sm:flex items-center">
               <Button variant="ghost" size="sm" className="gap-2 h-9">
                 <Phone className="h-4 w-4" />
                 <span className="hidden xl:inline">Call Us</span>
@@ -204,6 +208,7 @@ export const Header = () => {
               
               <a
                 href="https://wa.me/918919357003"
+                aria-label="WhatsApp for Tupperware orders and free kitchen organization service"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-4 py-3 text-base font-medium bg-[#25D366]/10 text-[#25D366] hover:bg-[#25D366]/20 rounded-lg transition-colors"
