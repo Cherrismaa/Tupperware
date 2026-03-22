@@ -1,7 +1,7 @@
 # Welcome Tupperware Website
 
 ## Visit the Website here
-https://tupperwarestore.co.in/
+https://cherrismaa.github.io/Tupperware/
 
 ## What technologies are used for this project?
 
